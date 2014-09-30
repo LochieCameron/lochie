@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+/* Reset */
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body {
+	background: url('3.jpg');
+}
+
+
+#title {
+	position: relative;
+	top: 220px;
+	font-family: 'Slabo 13px';
+	text-align: center;
+	color: #888;
+	font-size: 40px;
+	z-index: 1;
+}
+
+.menu-side {
+	position: fixed;
+	top: 0;
+	left: -241px;
+	width: 220px;
+	height: 100%;
+	background-color: #999;
+	border-right: 1px solid #999;
+	color: #fff;
+	padding: 10px;
+
+}
+
+.menu {
+	overflow-x: hidden;
+	position: relative;
+	top: 0;
+}
+
+.menu-open {
+	left: 241px;
+}
+
+.menu-open .menu-side { 
+	left: 0;
+}
+
+.menu-side, .menu {
+	transition: left 0.4s ease;
+}
+
+.menu-toggle {
+	position: fixed;
+	top: 0;
+	padding: 15px;
+	z-index: 1;
+}
+
+.menu-side > a > img {
+	position: relative;
+	top: 80px;
+	left: 10px;
+	font-family: 'Slabo 13px';
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#blog-1 {
+	position: relative;
+	top: 320px;
+	text-align: center;
+	background: white;
+	width: 550px;
+	height: 160px;
+	border-radius: 14px;
+	border: 1px solid #999;
+	box-shadow: 3px 10px 10px 5px #555;
+}
+
+#blog-1 > p {
+	position: relative;
+	top: 25px;
+	font-size: 25px;
+	font-family: 'Slabo 13px';
+	font-weight: 'light';
+}
